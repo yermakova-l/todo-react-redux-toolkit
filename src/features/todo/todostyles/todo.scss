@@ -1,0 +1,60 @@
+@import './colors.scss';
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    min-height: 68px;
+    background-color: $todo-row-bg;  
+}
+.done-btn, .edit-btn, .delete-btn,
+.create-new-todo button,
+.update-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.edit-btn, .done-btn,
+.delete-btn, .update-btn,
+.create-new-todo button  {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.edit-btn { background-color: $todo-edit-btn-bg; }
+.delete-btn { background-color: $todo-delete-btn-bg; }
+.done-btn {
+    background-color: $todo-done-btn-bg;    
+    margin-left: 15px;
+}
+.create-new-todo button {
+    font-size: 30px;
+    line-height: 30px;
+    background-color: $todo-create-btn-bg;
+    margin-left: 10px;
+}
+.update-btn {
+    background-color: $todo-update-btn-bg;
+    margin-left: 10px;
+    border: none;
+}
+.todo-description {
+    flex-grow: 2;
+    margin-right: 15px;
+    color: white;
+}
+.create-new-todo input,
+.update-input {
+    height: 42px;
+    min-width: 270px;
+    margin-left: 15px;
+    flex-grow: 2;
+    border: none;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    color: #2c2369;
+}
